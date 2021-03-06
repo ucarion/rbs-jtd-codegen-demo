@@ -19,5 +19,7 @@ Try messing around with `lib/github.rb`'s `Searcher::search` method to see what
 Relevant links:
 
 https://ucarion.com/ruby-rbs-codegen.html
+
 https://jsontypedef.com
+
 https://jsontypedef.com/docs/ruby-codegen/
