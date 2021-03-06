@@ -1,0 +1,42 @@
+class Searcher
+  SEARCH_ENDPOINT: ::String
+
+  MAX_RESULTS: ::Integer
+
+  def self.search: (untyped q) -> untyped
+end
+
+class SearchResult
+  attr_accessor url: untyped
+
+  attr_accessor name: untyped
+
+  attr_accessor description: untyped
+
+  attr_accessor stars: untyped
+
+  attr_accessor issues: untyped
+
+  attr_accessor created_at: untyped
+
+  attr_accessor updated_at: untyped
+
+  attr_accessor license: untyped
+
+  def to_pretty_s: () -> ::String
+
+  private
+
+  def ago: (DateTime date_time) -> ::String
+
+  def distance_of_time_in_words_to_now: (DateTime date_time) -> ::String
+end
+
+class String
+  def red: () -> ::String
+end
+
+class DateTime
+  def self.rfc3339: (::String) -> ::DateTime
+  def rfc3339: () -> ::String
+end
